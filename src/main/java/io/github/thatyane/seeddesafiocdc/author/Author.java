@@ -1,4 +1,4 @@
-package io.github.thatyane.seeddesafiocdc.domain.author;
+package io.github.thatyane.seeddesafiocdc.author;
 
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
@@ -18,17 +18,21 @@ public class Author {
     private Long id;
 
     @NotBlank
+    @Column(nullable = false)
     private String name;
 
     @NotBlank
     @Email
+    @Column(nullable = false, unique = true)
     private String email;
 
     @NotBlank
     @Length(max = 400)
+    @Column(nullable = false)
     private String description;
 
     @NotNull
+    @Column(nullable = false)
     private Instant instant;
 
     public Author(String name, String email, String description) {

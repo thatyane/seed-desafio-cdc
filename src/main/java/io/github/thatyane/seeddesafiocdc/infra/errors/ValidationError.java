@@ -1,4 +1,4 @@
-package io.github.thatyane.seeddesafiocdc.infra.author.error;
+package io.github.thatyane.seeddesafiocdc.infra.errors;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +8,8 @@ public class ValidationError extends StandardError {
 
     private List<FieldMessage> errors = new ArrayList<>();
 
-    public ValidationError(Long timestamp, Integer status, String error, String message, String path) {
-        super(timestamp, status, error, message, path);
+    public ValidationError(Long timestamp, Integer status, String path) {
+        super(timestamp, status, path);
     }
 
     public List<FieldMessage> getErrors() {

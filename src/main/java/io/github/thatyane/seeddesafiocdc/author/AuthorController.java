@@ -1,6 +1,5 @@
-package io.github.thatyane.seeddesafiocdc.domain.author;
+package io.github.thatyane.seeddesafiocdc.author;
 
-import io.github.thatyane.seeddesafiocdc.infra.author.AuthorRepositoty;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.PostMapping;
