@@ -1,5 +1,20 @@
-# Faça um fork desse repositório
+# seed-desafio-cdc
 
-Este é um repositório vazio de propósito. A ideia é que você faça um fork para que eu, Alberto, possa usar o github para ter a chance de olhar vários dos códigos produzido por você e seus(as) colegas da Jornada Dev Eficiente :). 
+Desafio da jornada dev eficiente (https://deveficiente.com/). A ideia é criar endpoints que simulem o sistema da casa do código (https://www.casadocodigo.com.br/)
 
-Durante cada uma das seis semanas eu vou pegar código por amostragem e analisar. Feito isso, vou criar um vídeo anonimizando a pessoa que é dona do código, com as minhas observações e postar isso como material de suporte da funcionalidade :). 
+## Features
+* Cria um autor: `POST/api/authors`
+* Cria uma categoria: `POST/api/categories`
+
+# Para rodar o projeto
+
+```bash
+mvn spring-boot:run
+```
+
+### Tecnologias utilizadas
+
+* **Java 11**
+* **Spring Boot 2**
+* **Maven**
+* **H2**
